@@ -6,35 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Your Name</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Milosz Gembicki</h1>
-        <p>MSc Computer Science E-Portfolio</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Milosz Gembicki</a>
+            <nav class="navbar sticky-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <a class="navbar-brand test mx-auto">MENU</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <header class="main_header">
+        <h1>MSc Computer Science E-Portfolio</h1>
+        <hr>
+        <p>MY E-PORTFOLIO BASED ON THE WORK CARRIED OUT ON THE MSC COMPUTER SCIENCE PROGRAMME.</p>
+    </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>A brief description about yourself.</p>
+        <hr>
+        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc
+            rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel
+            lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
+            libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+        <button>Learn More</button>
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Test Test test</p>
-        </div>
-    </section>
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+        <section id="one" class="tiles">
+            <article>
+                <span class="image">
+                    <img src="images/pic01.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Aliquam</a></h3>
+                    <p>Ipsum dolor sit amet</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic02.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Tempus</a></h3>
+                    <p>feugiat amet tempus</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic03.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Magna</a></h3>
+                    <p>Lorem etiam nullam</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic04.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Ipsum</a></h3>
+                    <p>Nisl sed aliquam</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic05.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Consequat</a></h3>
+                    <p>Ipsum dolor sit amet</p>
+                </header>
+            </article>
+            <article>
+                <span class="image">
+                    <img src="images/pic06.jpg" alt="" />
+                </span>
+                <header class="major">
+                    <h3><a href="landing.html" class="link">Etiam</a></h3>
+                    <p>Feugiat amet tempus</p>
+                </header>
+            </article>
+        </section>
+
+        <!-- Two -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>Massa libero</h2>
+                </header>
+                <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna
+                    magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna.
+                    Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem
+                    consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
+                    amet pharetra et feugiat tempus.</p>
+                <ul class="actions">
+                    <li><a href="landing.html" class="button next">Get Started</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
     <footer>
         <p>&copy; 2024 - Milosz Gembicki</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
