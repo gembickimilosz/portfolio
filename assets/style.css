@@ -74,12 +74,26 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #242943;
     color: #fff;
     padding: 1rem;
     text-align: center;
     bottom: 0;
     width: 100%;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer hr {
+    border: 1.5px solid #fff;
+    width: 10%;
+    /* Customize width */
+    margin: 20px 0;
+    /* Add some spacing */
+    opacity: 1;
 }
 
 /* About Section Styles */
@@ -234,6 +248,72 @@ footer {
     z-index: 4;
 }
 
+/* Default background image */
+.tiles article:after {
+    background-image: url("assets/images/home/default.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Default image */
+    content: '';
+    display: block;
+    height: 110%;
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    width: 110%;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    /* Add transition for opacity */
+}
+
+/* Individual images on hover */
+.tiles article:nth-child(1):hover:after {
+    background-image: url("../assets/images/home/launching.jpg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(2):hover:after {
+    background-image: url("../assets/images/home/objectoriented.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(3):hover:after {
+    background-image: url("../assets/images/home/securesoftware.webp");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(4):hover:after {
+    background-image: url("../assets/images/home/networksecurity.webp");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(5):hover:after {
+    background-image: url("../assets/images/home/informationsecurity.jpg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(6):hover:after {
+    background-image: url("../assets/images/home/softwareengineering.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(7):hover:after {
+    background-image: url("../assets/images/home/research.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(8):hover:after {
+    background-image: url("../assets/images/home/computingproject.jpg");
+    filter: blur(2px);
+}
+
+/* Fade out the overlay on hover */
+.tiles article:hover:before {
+    opacity: 0;
+    /* Fade out overlay on hover */
+}
+
 .tiles article:before {
     transition: opacity 0.5s ease;
     bottom: 0;
@@ -242,27 +322,13 @@ footer {
     height: 100%;
     left: 0;
     opacity: 0.85;
+    /* Default overlay opacity */
     position: absolute;
     width: 100%;
     z-index: 2;
 }
 
-.tiles article:after {
-    background-color: rgba(36, 41, 67, 0.25);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.tiles article:hover:before {
-    opacity: 0;
-}
-
+/* Additional styles remain unchanged */
 .tiles article.is-transitioning {
     transform: scale(0.95);
     filter: blur(0.5em);
@@ -274,6 +340,7 @@ footer {
     width: 55%;
 }
 
+/* Example color overlays for each tile */
 .tiles article:nth-child(8n - 7):before {
     background-image: linear-gradient(to right, #5b86e5, #36d1dc);
 }
