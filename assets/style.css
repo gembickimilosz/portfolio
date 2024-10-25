@@ -1,8 +1,5 @@
 /* General Resets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'League Spartan';
 }
 
@@ -60,6 +57,7 @@ body {
 }
 
 /* Navigation Styles */
+
 nav ul li {
     margin: 0 1rem;
 }
@@ -67,6 +65,17 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #7A8B99;
+}
+
+.container-fluid .test {
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.container-fluid .name {
+    padding-top: 10px;
+    font-size: 25px;
 }
 
 /* Footer Styles */
