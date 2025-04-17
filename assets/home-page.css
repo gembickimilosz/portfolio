@@ -1,0 +1,340 @@
+/* About Section Styles */
+#about {
+    background-color: #242943;
+    color: #FFF;
+    text-align: left;
+    padding: 2rem 5%;
+    /* Responsive padding */
+    height: 43vh;
+    /* Height relative to viewport height */
+    min-height: 400px;
+    /* Minimum height to prevent it from getting too small */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    /* Set a base size in rem */
+}
+
+#about p {
+    font-size: 1.2rem;
+    /* Set a base size in rem */
+}
+
+#about button {
+    background-color: #242943;
+    border: none;
+    color: white;
+    border: 2px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    /* Set button font size in rem */
+    cursor: pointer;
+    padding: 0.5em 1em;
+    /* Padding for better appearance */
+    max-width: 150px;
+    /* Set maximum width for button */
+    font-weight: bold;
+}
+
+#about hr {
+    width: auto;
+    /* Let hr adjust its width */
+    border: 1.5px solid #fff;
+    display: inline-block;
+    margin-left: 0;
+    /* Align with h2 */
+    vertical-align: middle;
+    /* Align hr with h2's middle */
+    opacity: 1;
+}
+
+/* Main Section Styles */
+#main {
+    background-color: #fff;
+}
+
+#main>* {
+    border-top: solid 1px rgba(212, 212, 255, 0.1);
+}
+
+#main>*:first-child {
+    border-top: 0;
+}
+
+#main>*>.inner {
+    padding: 4em 0 2em 0;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#main a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#main hr {
+    border: 1.5px solid #fff;
+    width: 100%;
+    /* Customize width */
+    margin: 20px 0;
+    /* Add some spacing */
+    opacity: 1;
+}
+
+/* Tiles Section Styles */
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 0 !important;
+}
+
+.tiles+* {
+    border-top: 0 !important;
+}
+
+.tiles article {
+    align-items: center;
+    display: flex;
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease;
+    padding: 4em 4em 2em 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+    height: 40vh;
+    max-height: 40em;
+    min-height: 23em;
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+}
+
+.tiles article .image {
+    display: none;
+}
+
+.tiles article header {
+    position: relative;
+    z-index: 3;
+}
+
+.tiles article h3 {
+    font-size: 1.75em;
+}
+
+.tiles article h3 a:hover {
+    color: inherit !important;
+}
+
+.tiles article .link.primary {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+/* Default background image */
+.tiles article:after {
+    background-image: url("assets/images/home/default.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Default image */
+    content: '';
+    display: block;
+    height: 110%;
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    width: 110%;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    /* Add transition for opacity */
+}
+
+/* Individual images on hover */
+.tiles article:nth-child(1):hover:after {
+    background-image: url("../assets/images/home/launching.jpg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(2):hover:after {
+    background-image: url("../assets/images/home/objectoriented.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(3):hover:after {
+    background-image: url("../assets/images/home/securesoftware.webp");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(4):hover:after {
+    background-image: url("../assets/images/home/networksecurity.webp");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(5):hover:after {
+    background-image: url("../assets/images/home/informationsecurity.jpg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(6):hover:after {
+    background-image: url("../assets/images/home/softwareengineering.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(7):hover:after {
+    background-image: url("../assets/images/home/research.jpeg");
+    filter: blur(2px);
+}
+
+.tiles article:nth-child(8):hover:after {
+    background-image: url("../assets/images/home/computingproject.jpg");
+    filter: blur(2px);
+}
+
+/* Fade out the overlay on hover */
+.tiles article:hover:before {
+    opacity: 0;
+    /* Fade out overlay on hover */
+}
+
+.tiles article:before {
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    /* Default overlay opacity */
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Additional styles remain unchanged */
+.tiles article.is-transitioning {
+    transform: scale(0.95);
+    filter: blur(0.5em);
+    opacity: 0;
+}
+
+.tiles article:nth-child(4n - 1),
+.tiles article:nth-child(4n - 2) {
+    width: 55%;
+}
+
+/* Example color overlays for each tile */
+.tiles article:nth-child(8n - 7):before {
+    background-image: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+.tiles article:nth-child(8n - 6):before {
+    background-color: #36d1dc;
+}
+
+.tiles article:nth-child(8n - 5):before {
+    background-image: linear-gradient(to right, #845EC2, #D65DB1);
+}
+
+.tiles article:nth-child(8n - 4):before {
+    background-color: #D65DB1;
+}
+
+.tiles article:nth-child(8n - 3):before {
+    background-color: #FF9671;
+}
+
+.tiles article:nth-child(8n - 2):before {
+    background-color: #FFC75F;
+    background-image: linear-gradient(to right, #FF9671, #FFC75F);
+}
+
+.tiles article:nth-child(8n - 1):before {
+    background-image: linear-gradient(to right, #0081CF, #008F7A);
+}
+
+.tiles article:nth-child(8n):before {
+    background-color: #008F7A;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1280px) {
+    .tiles article {
+        padding: 4em 3em 2em 3em;
+        height: 30vh;
+        max-height: 30em;
+        min-height: 20em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .tiles article {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .tiles article {
+        padding: 3em 1.5em 1em 1.5em;
+        height: 16em;
+        max-height: none;
+        min-height: 0;
+    }
+
+    .tiles article h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tiles {
+        display: block;
+    }
+
+    .tiles article {
+        height: 20em;
+        width: 100% !important;
+    }
+}
+
+/* Media Queries for Further Responsiveness */
+@media (max-width: 1024px) {
+    .main_header h1 {
+        font-size: 2rem;
+        /* Adjusted font size for medium screens */
+    }
+
+    .main_header p {
+        font-size: 1.2rem;
+        /* Adjusted font size for medium screens */
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+        /* Adjusted font size for medium screens */
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+}
