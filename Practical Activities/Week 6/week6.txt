@@ -1,0 +1,9 @@
+Review:
+
+This week, I focused on understanding the concept of encapsulation in object-oriented programming. Encapsulation refers to the practice of hiding the internal state of an object and providing access through well-defined interfaces, typically using methods. This helps prevent unintended interference and keeps the object’s behavior predictable and controlled.
+
+I reviewed Section 19.10 in Think Python as suggested, but I noticed that the section doesn’t directly cover encapsulation as a named topic.
+
+To better understand encapsulation, I researched additional examples and reviewed how attributes can be made private using naming conventions (e.g. _attribute or __attribute) and how getter/setter methods or properties can control access. I also practiced writing Python classes that encapsulate data and expose only necessary functionality.
+
+Although the textbook didn’t go into detail on encapsulation in that section, this independent exploration helped reinforce the concept and its practical use in writing more robust, maintainable code.
