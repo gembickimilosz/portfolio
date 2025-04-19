@@ -1,0 +1,14 @@
+What I aimed to do:
+My main goal was to finilize the system architecture and being implementing some of the components for my project. I particularly focused on product lookup and recipe suggestion modules. One of the biggest aims was completion of UML diagrams, that visually represent the code I was about to create.
+
+What I actually achieved:
+I believe that I have sucessfully completed the system design and produced core UML diagrams. Those included activity, class, sequence and state transition diagrams. In the submission, I have outlined main modules, while using OOP principles and suggested on how those will interact. I began defining the data structure, with focus on lists stacks and queues. Their aim was to outline functionality like recipe suggestion and stock tracking. 
+
+Setbacks or challenges:
+One challenge was to figure on how to keep modules independent, while making sure that those interact efficiently. Additionally, I had limited hands-on time for implementation due to ongoing learning of Python.
+
+What I learned:
+I surely gained deeper insights into how UML diagrams can help identify system issues and parallel processes. I understood how to incorporate high-level designs into object-oriented structures.
+
+How I planned to move forward:
+My next steps included focusing on code development for further submission. I had to think on how I would implement speech recognition and inventory monitoring systems. Additionally, I had to think on how I would like the code to be tested and develop any error-handling strategies.
