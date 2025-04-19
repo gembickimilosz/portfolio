@@ -3,3 +3,15 @@ Formative Activities| 2+2 hrs
 Continue the discussion in unit 1. You should now provide a summary post into to the discussion based on your initial post and the feedback from your peers. 
 
 Prepare for next week’s seminar by reviewing the preparation material available in Unit 4.
+
+_____________________________
+
+Discuss which UML models are most applicable at different stages of the Software Development Life Cycle:
+
+During the Software Development Life Cycle (SDLC), different UML diagrams are useful at different stages. In the early stages, Use Case Diagrams help capture user requirements, while Activity Diagrams illustrate key workflows. As the project moves into design, Class Diagrams define system structure, and Sequence Diagrams or Communication Diagrams show how different parts of the system interact. For modelling behaviour, especially of objects that go through different phases, State Machine Diagrams are most appropriate.
+
+_____________________________
+
+Making reference to ‘The Unified Modeling Language Reference Manual Second Edition’, use the State Machine Diagram in Figures 3-7 in Chapter 21 to design a similar model for a washing machine:
+
+Referring to Figure 3-7 in Chapter 21 of The Unified Modeling Language Reference Manual (Second Edition), I’ve created a state machine diagram for a washing machine. The machine begins in an Idle state. When started, it moves to Filling Water, followed by Washing, Rinsing, and Spinning, before reaching Complete. If the door is opened mid-cycle, the machine transitions to an Error state. From both Complete and Error, the user can reset it back to Idle.
