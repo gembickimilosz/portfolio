@@ -1,0 +1,13 @@
+Factors which Influence Reusability
+
+Reusability in software development depends on several key factors, as shown in the study by Padhy et al. (2019). Table 1 compares different threshold estimation methods and how they affect software metrics. One major factor is the choice of metrics used to assess software quality. Metrics like Weighted Methods per Class (WMC), Coupling Between Objects (CBO), and Lack of Cohesion of Methods (LCOM) help determine if a software component can be reused or if it might cause issues. Different researchers have applied various threshold values to these metrics, proving there isn’t a single standard threshold for all cases. Instead, reusability depends on the specific needs of a project and the environment in which it is developed.
+
+Another important factor is how thresholds are optimized. The paper explains how techniques like Genetic Algorithms (GA) and Artificial Neural Networks (ANN) can adjust thresholds to make software more adaptable. Table 1 also highlights the importance of setting the right metric thresholds to avoid unnecessary complexity, which can make reuse difficult. Some methods, such as Alves et al.'s approach, did not define clear thresholds, making it harder to judge reusability. Others, like Shatnawi et al., provided specific numbers, making it easier to evaluate components. This shows that setting proper thresholds is essential for ensuring software remains easy to maintain and reuse.
+
+References:
+
+Padhy, N. et al. (2021) ‘Threshold estimation from software metrics by using evolutionary techniques and its proposed algorithms’. Evolutionary Intelligence, 14(2). pp. 315–329
+
+Alves, T. L., Ypma, C., & Visser, J. (2010) 'Deriving metric thresholds from benchmark data'. Proceedings of the 26th International Conference on Software Maintenance (ICSM). 1–10.
+
+Shatnawi, R. (2010) 'A quantitative investigation of the acceptable risk levels of object-oriented metrics in open-source systems'. IEEE Transactions on Software Engineering, 36(2). 216–225.
