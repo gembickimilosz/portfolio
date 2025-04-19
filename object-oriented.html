@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Your Name</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Portfolio - Milosz Gembicki</title>
     <link rel="stylesheet" href="assets/modules-page.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -22,31 +22,47 @@
 <body>
     <nav class="navbar sticky-top bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand name" href="#">Milosz Gembicki</a>
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <a class="navbar-brand test mx-auto">MENU</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand name" href="index.html">Milosz Gembicki</a>
+            <nav class="navbar sticky-top bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <a class="navbar-brand test mx-auto">MENU</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Modules
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Launching into Computer Science</a></li>
+                            <li><a class="dropdown-item" href="#">Secure Software Development</a></li>
+                            <li><a class="dropdown-item" href="#">Network Security</a></li>
+                            <li><a class="dropdown-item" href="#">Information Security Management</a></li>
+                            <li><a class="dropdown-item" href="#">Software Engineering Project Management</a></li>
+                            <li><a class="dropdown-item" href="#">Research Methods and Professional Practice</a></li>
+                            <li><a class="dropdown-item" href="#">MSc Computing Project and Dissertation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Modules</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Launching into Computer Science</a></li>
-                        <li><a class="dropdown-item" href="#">Secure Software Development</a></li>
-                        <li><a class="dropdown-item" href="#">Network Security</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -59,14 +75,17 @@
                 <header class="major">
                     <h2>Lessons learnt and key outcomes</h2>
                 </header>
-                <p>By the units mentioned below, I learnt to understand the fundamentals of information systems and
-                    critically assess their features and learn from case studies involving systems failures to design
-                    purpose-built, successful object-oriented systems via UML diagrams. Such charts include sequence,
-                    activity, entity relationship, and class diagrams. Thereafter, I learnt to appreciate the
-                    object-oriented programming (OOP)-related principles and leveraged them to develop information
-                    systems in both Python and SQL, including a doctor’s surgery-related application. Throughout these
-                    endeavours, I learnt how to design and develop object-oriented systems to streamline and inform
-                    business decisions.</p>
+                <p>Throughout this module, I developed a comprehensive understanding of object-oriented programming and
+                    system design, beginning with the fundamentals of Python and progressing through advanced topics
+                    such as abstraction, inheritance, and polymorphism. I learned to critically assess information
+                    systems, drawing lessons from case studies involving system failures, and applied this knowledge to
+                    create effective UML diagrams - including use case, activity, state machine, and class diagrams - to
+                    support system planning. These skills enabled me to design and implement structured, scalable
+                    applications in Python. I also gained practical experience with data structures, search algorithms,
+                    testing tools, and design patterns,
+                    while appreciating the value of sustainable, maintainable code. Overall, the module equipped me with
+                    the technical and analytical tools needed to build robust software systems that support business
+                    decision-making and operational efficiency.</p>
             </div>
         </section>
 
@@ -74,7 +93,7 @@
         <section id="two" class="spotlights">
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/09/07/08/53/money-2724235_1280.jpg" alt=""
+                    <img src="https://miro.medium.com/v2/resize:fit:600/0*79n7BCq4YgyoJp8R.png" alt=""
                         data-position="top center" />
                 </a>
                 <div class="content">
@@ -82,7 +101,15 @@
                         <header class="major">
                             <h3>Unit 1: An Introduction to Python Programming and the OO Programming Paradigm</h3>
                         </header>
-                        <p>Test</p>
+                        <p>In this unit, I had the opportunity to explore the foundational principles of Python
+                            programming alongside the key concepts underpinning object-oriented programming (OOP). I
+                            examined the evolution of programming paradigms and learned how Python incorporates OOP
+                            features such as encapsulation, inheritance, abstraction, and polymorphism. Through
+                            practical activities and guided readings, I gained hands-on experience with creating Python
+                            classes and working with various data types and access modifiers. I also participated in a
+                            collaborative discussion, where I reviewed and provided constructive feedback on my peers'
+                            contributions, deepening my understanding of OOP concepts through reflection and dialogue.
+                        </p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%201"
                                     target="_blank" rel="noopener noreferrer" class="button">Learn more</a></li>
@@ -92,18 +119,25 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/10/25/18/10/peer-review-icon-2888794_1280.png" alt=""
-                        data-position="top center" />
+                    <img src="https://media.licdn.com/dms/image/v2/D5612AQEAzdglnLRHtw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1701964490313?e=2147483647&v=beta&t=xQjMaWUfMbRSx7j8Mb-xf4HpryghMXmYCeBn5x_TeNA"
+                        alt="" data-position="top center" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 2: Object Oriented Analysis - Initial Steps towards Programming in Python</h3>
                         </header>
-                        <p>In this unit, I had the chance to appreciate the importance of information systems in guiding
-                            business decisions and streamlining operations; furthermore, I had the chance to review two
-                            of my peers' posts on case studies related to information systems' failures and provide them
-                            with my constructive feedback.</p>
+                        <p>In this unit, I took my first steps into analysing program domains using object-oriented
+                            techniques before beginning Python development. I explored how actors interact with software
+                            through use case diagrams and learned to model internal system behaviours using state
+                            machine diagrams. These tools helped me visualise system functionality and flow, forming a
+                            solid foundation for structured software design. I also expanded my understanding of class
+                            functions and methods in Python, particularly in relation to variable retention and usage
+                            across instances. As part of the ongoing collaborative discussion, I engaged with peers'
+                            reflections from Unit 1, offering constructive feedback while deepening my grasp of
+                            modelling concepts. This unit was essential in preparing for the design documentation
+                            required in the upcoming summative assessment.
+                        </p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%202"
                                     class="button">Learn more</a></li>
@@ -113,15 +147,25 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2015/03/03/10/26/software-657188_1280.jpg" alt=""
-                        data-position="25% 25%" />
+                    <img src="https://images.ctfassets.net/w6r2i5d8q73s/6O9tn7x5Bvh7ECEhdEWSJZ/a881b352d2e1d1e9198299ba0c4deb10/diagramming_uml_diagram_product_image_EN_standard_3_2-2.png?fm=webp&q=75"
+                        alt="" data-position="25% 25%" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 3: Unified Modelling Language (UML)</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I deepened my understanding of the Unified Modelling Language (UML) as a key
+                            tool for representing software systems before implementation. I explored the common syntax
+                            used across UML diagrams and learned how different models support various stages of the
+                            Software Development Life Cycle (SDLC). I designed UML diagrams using open-source tools,
+                            which strengthened my ability to visually articulate system architecture and object
+                            interactions. This was particularly valuable in preparing for the design document required
+                            for the summative assessment. As part of the e-Portfolio activities, I reflected on the
+                            relevance of different UML models and created a state machine diagram inspired by a
+                            practical example from the core reading. I also continued participating in the collaborative
+                            discussion by sharing a summary post that synthesised feedback received from peers, allowing
+                            me to refine my earlier contributions and solidify my learning.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%203"
                                     class="button">Learn more</a></li>
@@ -139,7 +183,15 @@
                         <header class="major">
                             <h3>UUnit 4: Applying a UML Model to a Program Implementation: UML in Practice</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I applied my knowledge of UML by experimenting with additional model types,
+                            such as class and activity diagrams. I designed a class diagram to represent a specific
+                            system and then implemented the corresponding Python program using PyCharm. This practical
+                            experience helped solidify my understanding of how design documentation directly informs and
+                            shapes the coding process. The unit served as a key milestone in bridging theory with
+                            implementation, preparing me for the summative assessment where I will build a working
+                            system based on my Week 7 design. I continued building my e-Portfolio by documenting my
+                            progress and drafting my final reflection, ensuring I captured the development of my skills
+                            and insights throughout the learning process.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%204"
                                     target="_blank" rel="noopener noreferrer" class="button">Learn more</a></li>
@@ -149,7 +201,7 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/03/15/17/22/brain-2146817_1280.png" alt=""
+                    <img src="https://earthly.dev/blog/assets/images/python-classes-and-objects/wcXVeEw.png" alt=""
                         data-position="top center" />
                 </a>
                 <div class="content">
@@ -157,7 +209,16 @@
                         <header class="major">
                             <h3>Unit 5: More on Classes</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I advanced my understanding of object-oriented programming in Python by
+                            exploring how constructors and abstract classes contribute to modular and maintainable code.
+                            I examined key concepts such as inheritance, aggregation, composition, and polymorphism, and
+                            how they allow for flexible and reusable software design. I also learned about the
+                            importance of namespaces and packages in managing variable scope and organising code
+                            effectively within distributed teams. Through practical activities, I implemented a Python
+                            program using a constructor and abstract class, and worked with example code from the 'Think
+                            Python' textbook to reinforce these principles. I recorded my learning and progress in my
+                            e-Portfolio, including a reflection on the role of polymorphism in building scalable
+                            systems.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%205"
                                     class="button">Learn more</a></li>
@@ -167,7 +228,7 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2015/05/28/14/38/ux-787980_1280.jpg" alt=""
+                    <img src="https://miro.medium.com/v2/resize:fit:1100/1*ZV7Gl64vodk1a8VyYDHupw.png" alt=""
                         data-position="25% 25%" />
                 </a>
                 <div class="content">
@@ -175,7 +236,16 @@
                         <header class="major">
                             <h3>Unit 6: Abstract Methods and Interfaces</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I explored more advanced features of object-oriented programming in Python,
+                            focusing on the implementation of abstract classes and interfaces. I learned how interfaces
+                            support better code design by promoting modularity, consistency, and reusability across
+                            different components of a system. I also examined object-oriented metrics used to evaluate
+                            software quality, such as cohesion, coupling, and maintainability. This provided a
+                            theoretical foundation for assessing the effectiveness of object-oriented code. Through
+                            hands-on activities, I created a Python program applying interfaces and encapsulation,
+                            reinforcing the principles of abstraction and clean design. I continued documenting my
+                            progress and final reflections in my e-Portfolio, recognising how these concepts directly
+                            contribute to the quality and scalability of my future software development work.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%206"
                                     class="button">Learn more</a></li>
@@ -185,15 +255,26 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2021/01/20/05/30/data-5933101_1280.jpg" alt=""
-                        data-position="top center" />
+                    <img src="https://images.datacamp.com/image/upload/v1677232088/Exception%20and%20error%20handling%20in%20Python.png"
+                        alt="" data-position="top center" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 7: Debugging / Error Handling, Data Structures and Data Search</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I explored essential techniques for improving the quality and functionality of
+                            Python programs, focusing on debugging, error handling, and data management. I learned how
+                            to identify common coding errors and use Python tools, such as linters and return
+                            statements, to debug and maintain high-quality code. I also examined core data
+                            structures—including lists, dictionaries, and nested dictionaries—and implemented basic
+                            search algorithms to explore stored data efficiently. These concepts are vital for building
+                            robust and scalable software solutions. Through e-Portfolio activities, I created a Python
+                            program using a nested dictionary within a Car class and applied built-in methods like
+                            items(), keys(), and values(). Additionally, I developed a basic design pattern recommender
+                            based on user input, using constructors to initialise class attributes. These practical
+                            exercises enhanced my understanding of how structured data and program logic contribute to
+                            well-designed, object-oriented applications.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%207"
                                     target="_blank" rel="noopener noreferrer" class="button">Learn more</a></li>
@@ -203,15 +284,24 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_1280.png" alt=""
-                        data-position="top center" />
+                    <img src="https://d2ds8yldqp7gxv.cloudfront.net/Blog+Explanatory+Images/Python+Data+Structures+1.webp"
+                        alt="" data-position="top center" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 8: Data Structures and Data Search in Practice</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I expanded on my knowledge of data structures and focused on how different
+                            operations can be applied to sets in Python. I explored key set operations—union,
+                            intersection, difference, and symmetric difference—and considered their practical
+                            application in real-world scenarios, such as a driverless car system. I also developed an
+                            understanding of linear data search techniques and how they can be implemented to retrieve
+                            data from various structures efficiently. As part of the practical activity, I revisited
+                            recursion and polymorphism by working through selected sections of Think Python. I began
+                            contributing to Collaborative Discussion 2, which spans three weeks, and continued building
+                            my e-Portfolio by reflecting on how these topics contribute to the effectiveness of data
+                            handling and program logic in object-oriented design.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%208"
                                     class="button">Learn more</a></li>
@@ -221,15 +311,25 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2018/08/15/09/52/programmer-3607627_1280.png" alt=""
-                        data-position="25% 25%" />
+                    <img src="https://media.licdn.com/dms/image/v2/D5612AQGB4_BT7Zdc6w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1704417609376?e=2147483647&v=beta&t=Pv0uWvunlKgLDqwXsda8XvL69Op-DGjxNMQf6miGa2Y"
+                        alt="" data-position="25% 25%" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 9: Packaging and Testing</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I focused on the final stages of software development—testing and packaging. I
+                            learned how to package a Python program for distribution and explored the importance of
+                            documentation using the PEP257 convention to ensure that code is readable, maintainable, and
+                            professional. I also gained insight into a variety of code testing approaches and explored
+                            the tools available in Python to test for quality and robustness. Through the lecturecast
+                            and readings, I developed an understanding of how software complexity affects quality and
+                            how metrics can be used to assess and improve object-oriented code. These skills are
+                            critical for finalising the summative assessment, as they ensure that the codebase is clean,
+                            well-documented, and thoroughly tested. I also continued my participation in Collaborative
+                            Discussion 2 by responding to peer contributions from Unit 8 and further reflected on these
+                            topics in my e-Portfolio.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%209"
                                     class="button">Learn more</a></li>
@@ -239,15 +339,25 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2021/03/01/21/34/sql-6060942_1280.png" alt=""
-                        data-position="top center" />
+                    <img src="https://www.softwaretestingmagazine.com/wp-content/uploads/8-Best-Code-Testing-Tools-in-2025-scaled.jpg"
+                        alt="" data-position="top center" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
                             <h3>Unit 10: Testing Code in Practice</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I focused on finalising and preparing Python code for stakeholder release by
+                            applying key testing and documentation practices. I learned how to write unit tests to
+                            validate the functionality of my code and used pylint to ensure that my code adhered to
+                            stylistic and formatting standards. This was essential for maintaining both the quality and
+                            readability of my scripts. I also explored effective strategies for inline commenting and
+                            documenting code to enhance its clarity and usability. These skills are particularly
+                            valuable in a professional setting, where clear documentation and thorough testing
+                            contribute directly to client satisfaction and code maintainability. I concluded
+                            Collaborative Discussion 2 with a summary post reflecting on my own contributions and
+                            feedback received, and I continued to build my e-Portfolio with final reflections in
+                            preparation for the summative assessment in Week 11.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%2010"
                                     target="_blank" rel="noopener noreferrer" class="button">Learn more</a></li>
@@ -257,7 +367,7 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2020/04/25/15/38/codes-5091352_1280.png" alt=""
+                    <img src="https://anvil.works/articles/img/pointers-in-my-python/006a-comparison-2.png" alt=""
                         data-position="top center" />
                 </a>
                 <div class="content">
@@ -265,7 +375,19 @@
                         <header class="major">
                             <h3>Unit 11: Pointers, References, Memory, and Design Patterns</h3>
                         </header>
-                        <p></p>
+                        <p>In this unit, I explored deeper concepts related to memory management and code architecture
+                            within Python. I gained an understanding of how Python simplifies development by abstracting
+                            away the need for pointers—unlike languages such as C, which require explicit memory
+                            management. This comparison helped me appreciate Python’s role in supporting efficient and
+                            sustainable programming. I also investigated design patterns—creational, structural, and
+                            behavioural—as a way of organising object-oriented code in reusable and maintainable ways.
+                            These patterns provide developers with blueprints to solve common design problems
+                            effectively. Additionally, I reflected on the environmental impact of software and how
+                            sustainable coding practices, like modular design and efficient resource use, contribute to
+                            reducing a system’s carbon footprint. These insights were invaluable in completing the
+                            summative system implementation, where I applied design patterns to structure my final
+                            Python program. I continued updating my e-Portfolio to document this critical phase of the
+                            module.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%2011"
                                     class="button">Learn more</a></li>
@@ -275,7 +397,7 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/03/26/11/33/binary-2175285_960_720.jpg" alt=""
+                    <img src="https://carlosgrande.me/wp-content/uploads/2021/12/MargaretHamilton-1.jpg" alt=""
                         data-position="25% 25%" />
                 </a>
                 <div class="content">
@@ -283,7 +405,19 @@
                         <header class="major">
                             <h3>Unit 12: Working with Design Patterns to Structure Code</h3>
                         </header>
-                        <p></p>
+                        <p>In this final unit, I explored how design patterns can be strategically used to structure
+                            object-oriented programs, focusing particularly on the factory design pattern. I implemented
+                            a Python program that generated objects using this pattern and reflected on how it promotes
+                            flexibility and scalability in system architecture. The unit also introduced the concept of
+                            combining multiple design patterns within a single codebase, and I examined how certain
+                            patterns naturally complement one another when building modular, maintainable systems. This
+                            deeper understanding of software architecture has significantly influenced how I approach
+                            the organisation of code components and their interactions. Through the readings and seminar
+                            discussions, I also considered the role of design patterns in creating sustainable software
+                            solutions, reinforcing the environmental and efficiency benefits of thoughtful code
+                            structuring. I finalised my e-Portfolio submission by consolidating all reflections and
+                            practical work, bringing together the learning journey from this module into one
+                            comprehensive record.</p>
                         <ul class="actions">
                             <li><a href="https://github.com/gembickimilosz/portfolio/tree/object-oriented-programming/Practical%20Activities/Week%2012"
                                     class="button">Learn more</a></li>
@@ -293,19 +427,19 @@
             </section>
             <section>
                 <a class="image">
-                    <img src="https://cdn.pixabay.com/photo/2017/08/06/12/06/people-2591874_960_720.jpg" alt=""
+                    <img src="https://miro.medium.com/v2/resize:fit:4096/1*Q9bfz0wD837_Irn20O-ERA.jpeg" alt=""
                         data-position="top center" />
                 </a>
                 <div class="content">
                     <div class="inner">
                         <header class="major">
-                            <h3>Reflections on OOP, the OOIS module, and own self-development</h3>
+                            <h3>Reflections on OOP, the OOP module, and own self-development</h3>
                         </header>
-                        <p>In this reflective piece, I summarised what I learnt on OOP in the OOIS module, the work I
+                        <p>In this reflective piece, I summarised what I learnt on OOP in the OOP module, the work I
                             carried out throughout it, and their impact on my personal and professional development.
                             Click ‘LEARN MORE’ below to read it.</p>
                         <ul class="actions">
-                            <li><a href="oois_reflections.html" class="button">Learn more</a></li>
+                            <li><a href="object-oriented-reflection.html" class="button">Learn more</a></li>
                         </ul>
                     </div>
                 </div>
