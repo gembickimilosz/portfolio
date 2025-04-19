@@ -1,5 +1,22 @@
-Formative Activities| 4 hrs
+What I aimed to do:
+My primary goal was to implement the OOP software design. Following the previous submission, I had to develop the Supermarket Helper Robot. I delved into developing functional Python modules for key components. Those included handling product queries, recipe suggestions, inventory monitoring and simple main script to simulate the robot's interactions with customers/employees.
 
-Prepare for next week’s seminar by reviewing the preparation material available in Unit 12.
+What I actually achieved:
+I sucessfully developed a modular OOP system in Python, that included following modules:
 
-Continue your e-Portfolio updates.
+* robot.py - central controller,
+* product_database.py, recipe_database.py and inventory_manager.py - data handling,
+* speech_module.py - simulate user interaction,
+* JSON files - product locations and recipes.
+
+Main.py integrates these modules and allows simulated interaction. I also wrote run_tests.py to test core functionality (this runs all seperate test created). The robot was fully capable of processing customer product queries, suggesting recipes and tracking inventory updates. It used lists, stacks and queues that were outlined in the proposal design for this submission.
+
+Setbacks or challenges:
+One of the key challenges was designing the logic to match user input with recipe ingredients. Another challenge was testing modules before full integration, I wanted to ensure that interfaces of objects are clean and minimize coupling. At first I thought that it would be difficult to implement queues, although because of simplicity of the software, it wasn't as tricky.
+
+What I learned:
+I surely learned how to apply OOP principles to a real-world system. All of that, while ensuring modularity, encapsulation and reusability. UML designs helped me to implement a working model and showed the importance of clear architectural planning. I got more comfortable working with JSON data, custom Python classes and data structures for dynamic processing.
+
+
+How I planned to move forward:
+I aim to expand the speech module to handle more complex queries and recognise the voice, instead of just text. Additionally, I would love to implement a GUI to make the robot look more like a real-world product. Finally, a wider and better database could have a great impact on its work - use SQL, instead of JSON.
