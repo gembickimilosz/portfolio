@@ -52,7 +52,6 @@
                             <li><a class="dropdown-item" href="#">Launching into Computer Science</a></li>
                             <li><a class="dropdown-item" href="object-oriented.html">Object Oriented Programming</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Secure Software Development</a></li>
                             <li><a class="dropdown-item" href="#">Network Security</a></li>
                             <li><a class="dropdown-item" href="#">Information Security Management</a></li>
                             <li><a class="dropdown-item" href="#">Software Engineering Project Management</a></li>
@@ -77,133 +76,149 @@
                 </header>
                 <h3>My Experience</h3>
                 <p>
-                    The module focus was mainly on the principles of object-oriented programming (OOP). It also covered
-                    its application in developing structured, scalable software systems using Python. Encapsulation,
-                    inheritance, and polymorphism were key components of understanding how object-oriented design
-                    principles can be practically applied to real-world problems. I explored system modelling using
-                    Unified Modelling Language (UML), including developing class, activity, sequence, and state diagrams
-                    that were utilised to visualise system functionality and component interactions.
+                    This module focused on the principles of secure software development, emphasising the importance of
+                    integrating security throughout the software lifecycle rather than treating it as a separate or
+                    final-stage concern. Across Units 1–12, the module introduced a progression from theoretical
+                    security concepts to their practical implementation within a working system.
                 </p>
                 <p>
-                    The main part of the module was a practical project. I chose to design and implement software for a
-                    humanoid robot assistant that works in a supermarket environment (Supermarket Helper Robot). It
-                    focused on helping customers locate products, suggesting recipes based on their shopping basket, and
-                    monitoring inventory levels. It also included a trigger that informed employees about necessary
-                    restocking of products.
+                    In the early stages of the module, I explored key concepts such as the OWASP Top 10 and STRIDE
+                    threat modelling. These frameworks provided a structured approach to identifying vulnerabilities,
+                    including injection attacks, brute-force authentication attempts, and denial-of-service risks
+                    (OWASP, 2021). Initially, these models felt quite abstract, and I found it difficult to directly
+                    connect them to real software systems.
                 </p>
                 <p>
-                    I implemented it using Python and a JSON database, which was used to manage product and recipe data.
-                    In addition to that, I applied various data structures such as lists (for storing recipe
-                    ingredients), stacks (for tracking stock updates), and queues (to manage customer requests in
-                    first-in, first-out order). These structures enabled the system to function efficiently while
-                    ensuring modularity and maintainability.
+                    This understanding developed further during the team-based design document, where we proposed a
+                    secure online retailer system. The design applied the Model–View–Controller (MVC) pattern alongside
+                    a Strategy Pattern to modularise security behaviour (Lott and Phillips, 2021). A central feature was
+                    the secure_mode toggle, which allowed the system to switch between secure and insecure
+                    configurations. This approach enabled direct comparison of how different security controls affect
+                    system behaviour. The design also included authentication controls, role-based access control, input
+                    validation, and simulated external API integration.
                 </p>
                 <p>
-                    Before developing the software, I created a series of UML diagrams to support the system design.
-                    This ensured that all the robot’s behaviours, system flow, and class relationships were mapped ahead
-                    of the development process. Both assignments required a design proposal and a working prototype that
-                    demonstrated the use of OOP in solving a real-world problem. I approached that by refining each
-                    component and using diagrams as my planning tools. I understood that diagrams help in ensuring
-                    logical structure and system cohesion in any software.</p>
+                    In the later stages of the module, I developed an individual implementation of the system using
+                    Python and a command-line interface. The application included user registration, login, product
+                    management, and order processing, supported by security mechanisms such as input validation, salted
+                    password hashing using PBKDF2, account lockout, session management, and audit logging. The system
+                    retained the secure_mode functionality, allowing the behaviour of secure and insecure configurations
+                    to be demonstrated in practice, reflecting security-by-design principles (Olmsted, 2024).
+                </p>
 
                 <hr style="border-top: 2px solid white, 0.1; margin: 2em 0;">
 
                 <h3>Development and Learning Process</h3>
                 <p>
-                    This module surely contributed to my academic development. Before starting this module, I had not
-                    been a confident Python user, as during my previous studies we focused mainly on Java. It gave me a
-                    good overview of applying object-oriented programming concepts in a language that was completely new
-                    to me. I was able to work on building my skills in creating UML diagrams. That knowledge certainly
-                    helped me in visualising the system structure and translating it into functional Python software.
-                    Over time, working on the Supermarket Helper Robot project helped me build confidence in using
-                    various tools such as constructors, inheritance, abstract classes, and polymorphism in a coherent
-                    way.
+                    This module significantly changed my approach to software development. Previously, my focus was
+                    primarily on ensuring that systems worked correctly and were structured effectively using
+                    object-oriented principles. However, this module introduced the need to consider how systems can
+                    fail, be exploited, or misused, and how those risks can be mitigated through design.
                 </p>
                 <p>
-                    I found the ThinkPython book particularly helpful in visualising complex concepts. Despite my ADHD
-                    making traditional reading difficult, the book’s structure and exercises made the material
-                    accessible and kept me engaged, reinforcing the module’s key learning outcomes through practical
-                    examples (Downey, 2015).
+                    One of the most important learning outcomes was understanding how theoretical security frameworks
+                    translate into practical implementation. For example, identifying brute-force attacks during the
+                    design phase directly informed the implementation of account lockout mechanisms in my application.
+                    Similarly, recognising injection risks led to the use of strict input validation rules. This
+                    demonstrated that security is not just conceptual but directly influences how code is written and
+                    structured (OWASP, 2021).
                 </p>
                 <p>
-                    On a personal level, there were moments of frustration. As a person with limited time, debugging
-                    unexpected behaviours during the implementation phase was time-consuming. These obstacles were
-                    emotionally taxing at times, although I pushed through and tried to motivate myself to persist and
-                    refine my problem-solving skills. I believe that if one does not challenge themselves, they learn
-                    less. Surprisingly, at one point I found that troubleshooting and optimising the logic of my code
-                    became a genuine enjoyment. I was excited about identifying the error, looking for its cause, and
-                    happily resolving it – a highly rewarding moment during programming.
+                    The transition from the design document to the individual implementation was particularly valuable.
+                    The original design proposed a more comprehensive system, including full API integration and broader
+                    mitigation strategies such as request throttling. However, during implementation, I had to
+                    prioritise key features that could realistically be developed within the given timeframe. This
+                    aligns with the idea that secure systems must balance security, usability, and performance (Olmsted,
+                    2024). As a result, I focused on core security mechanisms such as authentication, validation, and
+                    access control, while simplifying other aspects, such as payment processing through a simulated
+                    gateway.
                 </p>
                 <p>
-                    I also went through some of my colleagues’ posts in collaborative discussions. Their posts gave me
-                    greater clarification on some theoretical elements, such as “Factors which Influence Reusability”
-                    and “OO Design for IoT”. I truly enjoyed seeing the different approaches to those subjects from each
-                    of the classmates. It helped me in understanding the content in a better way and contributed to
-                    developing a more reflective mindset (The University of Edinburgh, 2021). Although the coding was an
-                    independent task, I enjoyed engaging in more group work, which the collaborative discussions
-                    provided.
+                    From a technical perspective, implementing authentication and password security was especially
+                    insightful. Using PBKDF2 with a salt demonstrated how secure password storage differs from basic
+                    hashing techniques. Additionally, implementing account lockout and session expiry introduced
+                    real-world considerations such as managing state and balancing usability with security. These
+                    features were more complex than expected and required careful testing to ensure they behaved
+                    correctly.
                 </p>
                 <p>
-                    Informed by literature such as Goodrich and Schultz’s (2007) work on human-robot interaction, I was
-                    able to think more deeply about the user-facing aspects of the robot. Additionally, learning about
-                    multiple design patterns from Gamma et al. (1994) influenced my structuring of class interactions. I
-                    believe this blend of theory, application, and reflection has not only improved my technical
-                    competence but also reshaped the way I approach system design - with a great focus on clarity, user
-                    interaction, and sustainable development.
+                    There were also challenges during development. Debugging authentication logic and handling edge
+                    cases, such as repeated failed login attempts, was sometimes frustrating. Small errors often caused
+                    unexpected behaviour, which required time to diagnose and resolve. However, these challenges
+                    improved my problem-solving skills and encouraged a more systematic approach to debugging and
+                    testing.
+                </p>
+                <p>
+                    Engagement with discussion forums also contributed to my learning. Reading other students’
+                    perspectives on topics such as encryption tools and system vulnerabilities helped broaden my
+                    understanding of security beyond technical implementation. It became clear that user behaviour and
+                    usability play a significant role in the effectiveness of security controls, which aligns with
+                    reflective learning principles (The University of Edinburgh, 2024).
+                </p>
+                <p>
+                    Compared to my previous modules, this experience required a deeper level of critical thinking. It
+                    was not enough to build a functional system; I needed to justify design decisions in terms of
+                    security risks and real-world applicability. This shift has been an important step in my development
+                    as a software engineer.
                 </p>
 
                 <hr style="border-top: 2px solid white, 0.1; margin: 2em 0;">
 
                 <h3>Going Forward</h3>
                 <p>
-                    The skills that I have gained from this module will surely play a crucial role in shaping my
-                    development as a software developer. I believe I can now easily apply object-oriented programming
-                    (OOP) and modular design in real-world projects. Because of the confidence I have gained with
-                    Python, I plan to carry forward the momentum by integrating the learned principles into my future
-                    professional and academic work. What I plan to take from this is the importance of UML models and
-                    design patterns before writing any code. I have learned that the planning stage is not only
-                    important for minimising errors but also for providing more clarity and scalability in development
-                    tasks (Rolfe, Freshwater and Jasper, 2001).
+                    The knowledge gained from this module will strongly influence my future approach to software
+                    development. I now understand that security must be considered from the beginning of the design
+                    process rather than added later. Applying security-by-design principles will be essential in
+                    developing systems that are both functional and resilient (Olmsted, 2024).
                 </p>
                 <p>
-                    I have become more aware of the common problems in system design. The case study I conducted for the
-                    development of my robot taught me to prioritise user needs, robust architecture, and maintainability
-                    over quick implementation - something I had struggled with before. I recognise the importance of
-                    clean code, adequate documentation, and thorough testing. By combining all of these, I know I can
-                    deliver high-quality solutions in the environments I may work in the future.
+                    From a technical perspective, I plan to build on this foundation by exploring more advanced areas
+                    such as secure API development, database security, and multi-factor authentication. While this
+                    project used a JSON-based repository for simplicity, I recognise that more robust data storage
+                    solutions would be required in real-world applications.
                 </p>
                 <p>
-                    Looking ahead, I plan to revisit my work from my bachelor’s degree, which involved developing a
-                    mental health chatbot. Unlike before - when I used JavaScript and struggled with code structure and
-                    external libraries - I now feel confident building the next model using Python. I have learned the
-                    basic concepts of programming in that language, which will enhance my previous study project.
-                    Before, I was hesitant about programming the chatbot using Python, as I had not used the language
-                    before and feared failure. Through personal research, I now know that its seamless integration with
-                    tools like TensorFlow makes it a more accessible and powerful option for natural language processing
-                    and machine learning integration. This will allow me to focus on delivering more meaningful
-                    features, rather than spending time on syntax issues and the structural limitations of JavaScript.
+                    I also aim to improve my testing practices. Although I used pytest and linting tools effectively, I
+                    would like to expand into more comprehensive testing strategies, including integration testing and
+                    automated security testing. This reflects industry practices where testing is essential for
+                    validating both functionality and security.
                 </p>
                 <p>
-                    In the long term, I aim to deepen my skills in Python and SQL through Codecademy. I will focus on
-                    exploring areas like AI integration, human-centred design, and sustainable digital development. This
-                    module has given me an amazing scale of practical and theoretical foundation to not only think
-                    critically about system design, but also to build systems that truly matter.
+                    Reflecting on the development process, I have learned the importance of balancing ambition with
+                    practicality. While the design phase encouraged comprehensive thinking, the implementation phase
+                    required prioritisation. In future projects, I would aim to define clearer boundaries between
+                    essential and optional features to ensure efficient delivery.
+                </p>
+                <p>
+                    In terms of collaboration, the team design phase and discussion forums demonstrated the value of
+                    shared perspectives. Engaging with others provided new insights and helped challenge my assumptions.
+                    I would like to participate more actively in collaborative development environments in the future.
+                </p>
+                <p>
+                    Overall, this module has significantly enhanced both my technical skills and my understanding of
+                    secure software development. It has shifted my focus from simply building functional systems to
+                    designing systems that are secure, resilient, and aligned with real-world requirements. I feel more
+                    confident in my ability to apply these principles in future academic and professional work.
                 </p>
 
                 <hr style="border-top: 2px solid white, 0.1; margin: 2em 0;">
 
                 <h3>References</h3>
                 <ul>
-                    <li>Downey, A. (2024) Think Python: How to Think Like a Computer Scientist. Sebastopol, CA: O’Reilly
-                        Media, Inc.
+                    <li>Downey, A. (2015) Think Python: How to Think Like a Computer Scientist. 2nd edn. Sebastopol:
+                        O’Reilly Media.
                     </li>
-                    <li>Gamma, E. (1994) Design Patterns: Elements of Reusable Object-Oriented Software. Reading etc.:
-                        Addison-Wesley. </li>
-                    <li>Goodrich, M.A. and Schultz, A.C. (2007) Human-robot interaction: A survey. Foundations and
-                        Trends in Human-Computer Interaction 1(3): 203–275. DOI:10.1561/9781601980939. </li>
-                    <li>The University of Edinburgh (2021) Reflecting on Experience. Available from:
-                        https://www.ed.ac.uk/reflection/reflectors-toolkit/reflecting-on-experience [Accessed 17 April
-                        2025].</li>
+                    <li>Lott, S.F. and Phillips, D. (2021) Python Object-Oriented Programming. 4th edn. Birmingham:
+                        Packt.</li>
+                    <li>Olmsted, A. (2024) Security-Driven Software Development. Birmingham: Packt.</li>
+                    <li>OWASP (2021) OWASP Top 10: The Ten Most Critical Web Application Security Risks. Available from:
+                        https://owasp.org/Top10/ [Accessed 19 April 2026].</li>
+                    <li>Pagotto, T. et al. (2016) ‘Scrum solo: Software process for individual development’, IEEE
+                        Conference Proceedings.</li>
+                    <li>Pauli, J.J. and Xu, D. (2005) ‘Misuse case-based design and analysis of secure software
+                        architecture’, IEEE ITCC.</li>
+                    <li>The University of Edinburgh (2024) Reflection Toolkit. Available from:
+                        https://www.ed.ac.uk/reflection/reflectors-toolkit [Accessed 19 April 2026].</li>
                 </ul>
             </div>
         </section>
