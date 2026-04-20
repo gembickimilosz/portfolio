@@ -1,0 +1,29 @@
+Activity 3
+
+What is the cyclomatic complexity of the following piece of code?
+
+
+public static string IntroducePerson(string name, int age)
+{
+    var response = $"Hi! My name is {name} and I'm {age} years old.";
+
+    if (age >= 18)
+        response += " I'm an adult.";
+
+    if (name.Length > 7)
+        response += " I have a long name.";
+
+    return response;
+}
+
+Source: Schultz, C. (2021) Cyclomatic Complexity Defined Clearly, With Examples. LinearB.
+
+Answer: 
+
+The cyclomatic complexity of this function is 3.
+
+Simply because:
+* Every "if" statement adds one possible path the program can take.
+* This function has two "if" statements, plus one default path.
+
+1 (main path) + 1 (if age >= 18) + 1 (if name is long) = 3 total paths

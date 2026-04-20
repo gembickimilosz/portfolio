@@ -1,0 +1,6 @@
+Review: 
+Polymorphism is a core concept in object-oriented programming that allows different object types to respond to the same method call. For example, if Line, Rectangle, and Circle classes all define a draw() method, we can store instances of these in a list and loop through them, calling draw() on each. This makes the code cleaner, more flexible, and easier to extend with new shape types.
+
+A common issue in object-oriented programs is sharing mutable objects like a Point between multiple shapes. If one shape modifies the point, others that share it may be affected unexpectedly. To avoid this, we can use deep copy to duplicate objects or use pure functions that return new objects instead of modifying existing ones.
+
+Overall, using polymorphism along with careful handling of shared objects leads to code that is easier to write, test, and debug.

@@ -1,0 +1,17 @@
+Baskara et al. (2024) introduced a metamodel aimed at improving object-oriented (OO) design in IoT systems by emphasizing modularity, heterogeneity, and context-awareness. This approach enhances flexibility and scalability, particularly in dynamic environments. A key strength of the model lies in its abstraction of device roles and interactions, aligning well with core OO principles such as encapsulation and inheritance.
+
+However, while effective for passive IoT devices, the original metamodel lacks provisions for active, autonomous agents such as humanoid robots. Specifically, it does not account for the decision-making processes or cognitive behaviors required for autonomous functioning in real-world, human-centric environments.
+
+To address this gap, an extended OO model - referred to here as the Smart Model - is proposed. This model retains the modular structure of Baskara et al.’s framework but enhances it by incorporating a CognitiveModule and supporting components. The operational flow is driven by a perceive-plan-act architecture:
+
+Perceive: The robot continuously gathers environmental data via sensors, analyzing the context for potential tasks or triggers.
+
+Plan: If a task is identified, the CognitiveModule formulates an appropriate response or action plan.
+
+Act: Using its actuators, the robot executes the task and monitors the outcome, updating its internal state accordingly.
+
+This activity-based flow reflects real-time, autonomous interaction cycles, enabling adaptive behavior in dynamic settings. By incorporating this behavior-driven architecture, the model extends traditional OO principles into cognitive robotics, making it better suited for complex, autonomous systems.
+
+References:
+
+Baskara, W. P., et al. (2024). T-UFF (Tracker Stuff): Application Development for Warehouse Tracking. IOP Conf. Ser.: Earth Environ. Sci., 1294, 012025.
